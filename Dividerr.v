@@ -3,7 +3,7 @@ module Divider_12MHz_1000hz #(parameter modulo=12000) (
 	input clk_12MHz,
 	output reg clk_out
 );
-reg [26:0] cnt;
+reg [15:0] cnt;
 always @(posedge clk_12MHz)
 begin
 	if (cnt==modulo-1)
@@ -23,7 +23,7 @@ module Divider_12MHz_5000hz #(parameter modulo=2400) (
 	input clk_12MHz,
 	output reg clk_out
 );
-reg [26:0] cnt;
+reg [15:0] cnt;
 always @(posedge clk_12MHz)
 begin
 	if (cnt==modulo-1)

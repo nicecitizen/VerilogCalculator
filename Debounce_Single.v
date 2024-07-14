@@ -6,19 +6,19 @@ module Debounce_Single #(parameter N=5)
 	output reg isPressed
 );
 
-reg DFF [9:0];
+reg DFF [19:0];
 
 always @(posedge clk_1000hz or negedge rst_n) 
 begin:DB0
 	integer i,j;
 	if (!rst_n)
 	begin
-		for (i=0;i<=9;i=i+1)
+		for (i=0;i<=19;i=i+1)
 			DFF[i]<=0;
 			isPressed=0;
 	end
 	else begin
-		for (i=1;i<=9;i=i+1)
+		for (i=1;i<=19;i=i+1)
 			DFF[i]<=DFF[i-1];
 		DFF[0]<=key;
 		isPressed=key;
