@@ -1,4 +1,1 @@
-Verilog code of a FPGA calculator from the assignment of summer semester's EE Production Practice . 
-Running on STEP FPGA's (Intel-MAX10) core board and part of the IOs (total is 32) are connected to a designated PCB board.
-Simple logic and but could perform operations practically.
-The top module is Calculator.v , the function of math operations is defined here. And two functional blocks Keyboard.v and SegDisplay.v constitute the IO realization of this calculator, both recall some other sub modules to fulfill the corresponding duties.
+Verilog code for an FPGA calculator from the summer semester's EE Production Practice assignment. It runs on the STEP FPGA (Intel MAX10) core board, with part of the IOs (32 in total) connected to a designated PCB board. The calculator implements simple logic but can perform operations practically. The top module is Calculator.v, where the math operations are defined. Two functional blocks, Keyboard.v and SegDisplay.v, handle the IO realization of the calculator, each recalling other submodules to fulfill their respective duties.
